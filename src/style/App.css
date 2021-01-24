@@ -1,0 +1,18 @@
+
+.App {
+  text-align: center;
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+.date-picker {
+  margin-bottom: 50px;
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
+.date-label {
+  margin-right: 20px;
+}

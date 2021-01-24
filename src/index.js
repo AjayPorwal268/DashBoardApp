@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Provider } from 'react-redux'
+import './style/index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import App from './widget/sigmoidDashboard.connect';
 import reportWebVitals from './reportWebVitals';
+import createStore from './store'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={createStore()}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
